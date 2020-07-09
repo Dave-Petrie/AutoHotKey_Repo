@@ -59,4 +59,18 @@ F2::
 	FormatTime, CurrentDateTime,, yy.MM.dd
 	SendInput %CurrentDateTime% 
 
+; Win+q Copies directory path of current explorer window, (press windows q twice)
+#q::
+	Send, {F4}
+	Send, ^a
+	Send, {Left}
+	Send, ^{Right}
+	Send, ^{Right}	
+	Send, ^{Right}
+	Send, ^{Right}
+	SendInput {Ctrl down}{Shift down}{End}
+	SendInput {Ctrl up}{Shift up}
+	Send, ^c
+	Return
+
 ; ===============================================================================================================================
