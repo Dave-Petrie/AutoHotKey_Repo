@@ -57,7 +57,8 @@ F1::
 ; Add current date
 F2::
 	FormatTime, CurrentDateTime,, yy.MM.dd
-	SendInput %CurrentDateTime% 
+	SendInput %CurrentDateTime%
+	Return 
 
 ; Win+q Copies directory path of current explorer window, (press windows q twice)
 #q::
