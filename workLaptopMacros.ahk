@@ -56,7 +56,7 @@ F1::
 	
 ; Add current date
 F2::
-	FormatTime, CurrentDateTime,, yy.MM.dd
+	FormatTime, CurrentDateTime,, yyyy.MM.dd
 	SendInput %CurrentDateTime%
 	Return 
 
