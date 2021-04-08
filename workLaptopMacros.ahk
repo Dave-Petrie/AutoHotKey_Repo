@@ -58,7 +58,12 @@ F1::
 F2::
 	FormatTime, CurrentDateTime,, yyyy.MM.dd
 	SendInput %CurrentDateTime%
-	Return 
+	Return
+
+; Add current date
+F3::
+	Send SharePoint - Folder
+	Return  
 
 ; Win+q Copies directory path of current explorer window, (press windows q twice)
 #q::
