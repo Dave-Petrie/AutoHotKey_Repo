@@ -54,7 +54,7 @@ F1::
 	Send David.Petrie@aurecongroup.com
 	Return
 	
-; Add current date
+; Add current date with periods
 F2::
 	FormatTime, CurrentDateTime,, yyyy.MM.dd
 	SendInput %CurrentDateTime%
@@ -63,7 +63,13 @@ F2::
 ; Add current date
 F3::
 	Send SharePoint - Folder
-	Return  
+	Return 
+
+; Add current date with dashes
+F4::
+	FormatTime, CurrentDateTime,, yyyy-MM-dd
+	SendInput %CurrentDateTime%
+	Return 
 
 ; Win+q Copies directory path of current explorer window, (press windows q twice)
 #q::
